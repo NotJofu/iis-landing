@@ -128,7 +128,7 @@ const Hero = () => {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80')`,
+          backgroundImage: `url('/oil-refinery.jpg')`,
         }}
       />
       {/* Dual-gradient overlay */}
@@ -808,7 +808,7 @@ const AssessSVG = () => {
         </g>
 
         {/* Measurement marks */}
-        {[70, 90, 110, 130].map((y, i) => (
+        {[70, 90, 110, 130].map((y) => (
           <g key={y} className="meas-mark">
             <line x1="12" y1={y} x2="22" y2={y} stroke="#E63B2E" strokeWidth="0.8" strokeOpacity="0.7" />
             <text x="5" y={y + 3.5} fill="#E63B2E" fontSize="5.5" fontFamily="Space Mono" opacity="0.55">{y}</text>
@@ -992,7 +992,7 @@ const Protocol = () => {
 
       {/* Step indicators */}
       <div className="absolute right-6 md:right-12 top-1/2 -translate-y-1/2 flex flex-col gap-2 z-10">
-        {steps.map((s, i) => (
+        {steps.map((_, i) => (
           <div key={i} className="w-0.5 h-10 overflow-hidden" style={{ background: 'rgba(232,228,221,0.12)' }}>
             <div
               className="w-full h-full origin-top"
