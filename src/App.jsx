@@ -144,12 +144,12 @@ const Hero = () => {
       {/* Content — bottom-left */}
       <div className="absolute bottom-0 left-0 p-10 md:p-20 max-w-4xl">
         <p className="hero-tag font-mono text-[10px] tracking-[0.35em] uppercase text-[#E8E4DD]/55 mb-5">
-          API 510 · 570 · 653 Certified &nbsp;·&nbsp; 15 Years of Field Excellence
+          API 510 · 570 Certified &nbsp;·&nbsp; 16 Years of Field Excellence
         </p>
 
         <div className="overflow-hidden mb-1">
           <h1 className="hero-line-1 font-sans text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-none text-[#F5F3EE]">
-            Certified Expertise. Proven Integrity.
+            Certified & Experienced.<br />Proven Integrity.
           </h1>
         </div>
         <div className="overflow-hidden mb-7">
@@ -160,7 +160,7 @@ const Hero = () => {
 
         <p className="hero-sub font-mono text-sm text-[#E8E4DD]/65 mb-8 leading-relaxed max-w-sm">
           API 510 &amp; 570 Certified Inspections.<br />
-          15 Years of Industrial Excellence.
+          16 Years of Industrial Excellence.
         </p>
 
         <div className="hero-cta flex flex-wrap items-center gap-4">
@@ -175,7 +175,7 @@ const Hero = () => {
             Request Inspection
           </a>
           <a
-            href="mailto:caseydelozier001@hotmail.com"
+            href="mailto:industrial.insp@outlook.com"
             className="inline-flex items-center gap-2.5 px-7 py-4 font-mono text-sm tracking-wider text-[#E8E4DD]/70 border border-[#E8E4DD]/20"
             style={magneticStyle}
             onMouseEnter={onMagEnter}
@@ -237,12 +237,12 @@ const DiagnosticShuffler = () => {
         </div>
 
         <p className="font-mono text-[10px] text-[#E8E4DD]/40 mt-4 leading-relaxed">
-          Systematic evaluation across all pressure-retaining equipment using visual, NDE, and corrosion mapping techniques.
+          Systematic evaluation and consulting across all pressure-retaining equipment.
         </p>
       </div>
 
-      <div className="grid grid-cols-3 gap-2 mt-4">
-        {['510', '570', '653'].map(code => (
+      <div className="grid grid-cols-2 gap-2 mt-4">
+        {['510', '570'].map(code => (
           <div key={code} className="border border-[#E8E4DD]/10 p-2 text-center">
             <span className="font-mono text-[9px] text-[#E8E4DD]/50 tracking-wider">API {code}</span>
           </div>
@@ -298,7 +298,7 @@ const TelemetryTypewriter = () => {
 
       <div>
         <h3 className="font-sans text-xl font-bold text-[#E8E4DD] mb-3 leading-tight">
-          Repair &amp; Turnaround<br />Planning
+          Repair &amp;<br />Turnaround Planning
         </h3>
 
         {/* Terminal display */}
@@ -452,12 +452,9 @@ const Features = () => {
       <div className="max-w-7xl mx-auto">
         <div className="feat-header flex flex-col md:flex-row md:items-end justify-between gap-8 mb-14">
           <div>
-            <p className="font-mono text-[9px] tracking-[0.32em] uppercase text-[#E8E4DD]/35 mb-4">
-              Core Services
-            </p>
             <h2 className="font-sans text-3xl md:text-5xl font-bold text-[#E8E4DD] leading-tight">
-              Functional<br />
-              <span className="font-serif italic" style={{ color: '#E63B2E' }}>Artifacts</span>
+              Core<br />
+              <span className="font-serif italic" style={{ color: '#E63B2E' }}>Services</span>
             </h2>
           </div>
           <p className="font-mono text-[10px] text-[#E8E4DD]/40 max-w-xs leading-relaxed">
@@ -489,10 +486,10 @@ const GanttChart = () => {
   const [triggered, setTriggered] = useState(false)
 
   const tasks = [
-    { label: 'Mobilization',         start: 0,   duration: 8,  phase: 'Pre-Turnaround' },
-    { label: 'Initial Inspection',   start: 5,   duration: 12, phase: 'Pre-Turnaround' },
-    { label: 'NDE / Corrosion Map',  start: 10,  duration: 15, phase: 'Assessment' },
-    { label: 'Fitness-for-Service',  start: 18,  duration: 10, phase: 'Assessment' },
+    { label: 'Mobilization',         start: 0,   duration: 8,  phase: 'Pre-Project' },
+    { label: 'Initial Inspection',   start: 5,   duration: 12, phase: 'Pre-Project' },
+    { label: 'Repair Planning',       start: 10,  duration: 15, phase: 'Assessment' },
+    { label: 'Code Interpretation',  start: 18,  duration: 10, phase: 'Assessment' },
     { label: 'P&ID Redlining',       start: 22,  duration: 14, phase: 'Documentation' },
     { label: 'Repair Authorization', start: 28,  duration: 8,  phase: 'Documentation' },
     { label: 'Contractor Oversight', start: 34,  duration: 20, phase: 'Execution' },
@@ -503,7 +500,7 @@ const GanttChart = () => {
 
   const totalDays = 70
   const phaseColors = {
-    'Pre-Turnaround': '#5B7FA6',
+    'Pre-Project': '#5B7FA6',
     'Assessment':     '#E63B2E',
     'Documentation':  '#8A7E6A',
     'Execution':      '#E63B2E',
@@ -511,7 +508,7 @@ const GanttChart = () => {
   }
 
   const phaseOpacity = {
-    'Pre-Turnaround': 0.7,
+    'Pre-Project': 0.7,
     'Assessment':     0.9,
     'Documentation':  0.65,
     'Execution':      1,
@@ -541,11 +538,8 @@ const GanttChart = () => {
       <div className="max-w-7xl mx-auto">
         <div className="gantt-title flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div>
-            <p className="font-mono text-[9px] tracking-[0.32em] uppercase text-[#E8E4DD]/35 mb-4">
-              Turnaround Intelligence
-            </p>
             <h2 className="font-sans text-3xl md:text-5xl font-bold text-[#E8E4DD] leading-tight">
-              Inspection<br />
+              Project<br />
               <span className="font-serif italic" style={{ color: '#E63B2E' }}>Lifecycle</span>
             </h2>
           </div>
@@ -643,9 +637,6 @@ const GanttChart = () => {
                 <span className="font-mono text-[8px] text-[#E8E4DD]/35 tracking-wider">{phase}</span>
               </div>
             ))}
-            <div className="ml-auto font-mono text-[8px] text-[#E8E4DD]/25 tracking-widest">
-              TYPICAL 10-WEEK TURNAROUND ENGAGEMENT
-            </div>
           </div>
         </div>
       </div>
@@ -703,13 +694,15 @@ const Philosophy = () => {
 
       <div className="relative max-w-7xl mx-auto">
         {/* Contrast statement */}
-        <div className="mb-28">
-          <p className="phil-tag font-mono text-[10px] tracking-[0.32em] uppercase text-[#E8E4DD]/35 mb-8">
-            Most inspectors just log the damage.
+        <div className="mb-28 flex flex-col gap-2">
+          <p className="phil-tag font-serif italic leading-tight text-[#F5F3EE]" style={{ fontSize: 'clamp(2rem, 5vw, 4rem)' }}>
+            Most inspectors
           </p>
-          <h2 className="phil-statement font-serif italic leading-none text-[#E8E4DD]" style={{ fontSize: 'clamp(2.8rem, 7vw, 6rem)' }}>
-            We engineer the{' '}
-            <span style={{ color: '#E63B2E' }}>Solution.</span>
+          <p className="phil-tag font-serif italic leading-tight text-[#F5F3EE] md:ml-16" style={{ fontSize: 'clamp(2rem, 5vw, 4rem)' }}>
+            just log the damage.
+          </p>
+          <h2 className="phil-statement font-serif italic leading-none mt-4 md:ml-32" style={{ fontSize: 'clamp(3rem, 8vw, 7rem)', color: '#E63B2E' }}>
+            We give solutions.
           </h2>
         </div>
 
@@ -717,53 +710,32 @@ const Philosophy = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 border-t border-[#E8E4DD]/[0.08] pt-16">
           <div className="phil-bio-left">
             <p className="font-mono text-[9px] tracking-[0.32em] uppercase text-[#E8E4DD]/35 mb-5">
-              About Casey DeLozier
+              About II&amp;S
             </p>
             <h3 className="font-sans text-2xl font-bold text-[#E8E4DD] mb-5 leading-tight">
-              15 Years at the Frontier of<br />Pressure Equipment Integrity
+              16 Years of Pressure<br />Equipment Integrity
             </h3>
             <p className="font-mono text-[11px] text-[#E8E4DD]/55 leading-[1.9] mb-6">
-              With over 15 years embedded in the world's most demanding industrial environments — including BP, Shell, and major Gulf Coast refineries — Casey DeLozier brings field-tested expertise that no report can replicate.
+              With over 16 years embedded in the world's most demanding industrial environments — including major oil field refineries — II&amp;S brings field-tested expertise that no report can replicate.
             </p>
             <p className="font-mono text-[11px] text-[#E8E4DD]/55 leading-[1.9]">
-              His approach is not just compliance — it is engineering judgement. Every inspection produces a clear action path: what needs to be fixed, how to fix it, and who needs to sign off.
+              Our approach is not just compliance — it is informed judgement. Every inspection produces a clear action path: what needs to be fixed, how to fix it, and who needs to sign off.
             </p>
           </div>
 
-          <div className="phil-bio-right space-y-8">
-            <div>
-              <p className="font-mono text-[9px] tracking-[0.32em] uppercase text-[#E8E4DD]/35 mb-4">
-                Certifications &amp; Fluency
-              </p>
-              <div className="space-y-2.5">
-                {[
-                  'API 510 — Pressure Vessel Inspector',
-                  'API 570 — Piping Inspector',
-                  'API 653 — Aboveground Storage Tanks',
-                  'NBIC — National Board Inspector Commission',
-                  'ASNT — NDT Level II / III',
-                ].map(cert => (
-                  <div key={cert} className="flex items-center gap-3">
-                    <div className="w-1 h-1 rounded-full flex-shrink-0" style={{ background: '#E63B2E' }} />
-                    <span className="font-mono text-[10px] text-[#E8E4DD]/65">{cert}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div>
-              <p className="font-mono text-[9px] tracking-[0.32em] uppercase text-[#E8E4DD]/35 mb-4">
-                Industry Experience
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {['BP', 'Shell', 'Gulf Coast Refineries', 'Chemical Plants', 'Offshore Platforms', 'Turnarounds'].map(tag => (
-                  <span key={tag} className="font-mono text-[9px] px-2.5 py-1 border border-[#E8E4DD]/15 text-[#E8E4DD]/45">
-                    {tag}
-                  </span>
-                ))}
-              </div>
+          <div className="phil-bio-right">
+            <p className="font-mono text-[9px] tracking-[0.32em] uppercase text-[#E8E4DD]/35 mb-5">
+              Industry Experience
+            </p>
+            <div className="flex flex-wrap gap-2">
+              {['Oil Refineries', 'Gulf Coast Refineries', 'Chemical Plants', 'Offshore Platforms', 'Turnarounds'].map((tag) => (
+                <span key={tag} className="font-mono text-[10px] text-[#E8E4DD]/50 border border-[#E8E4DD]/15 rounded px-3 py-1.5">
+                  {tag}
+                </span>
+              ))}
             </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -923,7 +895,7 @@ const Protocol = () => {
       title: 'Assess',
       subtitle: 'Internal/External API Evaluation',
       description:
-        'Systematic evaluation of pressure equipment through visual inspection, NDE methods, and corrosion rate mapping. Every defect is catalogued, every risk quantified against API fitness-for-service criteria.',
+        'Systematic evaluation of pressure equipment through visual inspection. Every defect is catalogued, every risk quantified.',
       visual: <AssessSVG />,
     },
     {
@@ -939,7 +911,7 @@ const Protocol = () => {
       title: 'Execute',
       subtitle: 'QA/QC and Turnaround Management',
       description:
-        'From planning to mechanical completion, we manage the full turnaround scope — coordinating contractors, witnessing repairs, verifying weld QA/QC, and delivering complete compliance documentation.',
+        'From planning to mechanical completion, we can manage the full project scope — coordinating contractors, witnessing repairs, verifying weld QA/QC, and delivering complete compliance documentation.',
       visual: <ExecuteSVG />,
     },
   ]
@@ -1069,7 +1041,7 @@ const Footer = () => {
               style={{ flexShrink: 0 }}
             />
             <span className="font-mono text-[10px] text-[#E8E4DD]/55 tracking-[0.22em] uppercase">
-              Inspector On Call
+              Project Consultant On Call
             </span>
           </div>
           <div className="flex items-center gap-3">
@@ -1089,9 +1061,6 @@ const Footer = () => {
             </div>
             <p className="font-mono text-[10px] text-[#E8E4DD]/40 leading-relaxed mb-1">
               Industrial Inspections<br />&amp; Solutions LLC
-            </p>
-            <p className="font-mono text-[9px] text-[#E8E4DD]/25 mt-3">
-              Led by Casey DeLozier
             </p>
           </div>
 
@@ -1114,7 +1083,7 @@ const Footer = () => {
                 </span>
               </a>
               <a
-                href="mailto:caseydelozier001@hotmail.com"
+                href="mailto:industrial.insp@outlook.com"
                 className="flex items-center gap-3 group"
                 style={magneticStyle}
                 onMouseEnter={onMagEnter}
@@ -1122,23 +1091,9 @@ const Footer = () => {
               >
                 <Mail size={13} style={{ color: '#E63B2E', flexShrink: 0 }} />
                 <span className="font-mono text-[11px] text-[#E8E4DD]/70 group-hover:text-[#E63B2E] transition-colors duration-200 break-all">
-                  caseydelozier001@hotmail.com
+                  industrial.insp@outlook.com
                 </span>
               </a>
-            </div>
-          </div>
-
-          {/* Certifications */}
-          <div className="footer-item">
-            <p className="font-mono text-[9px] tracking-[0.32em] uppercase text-[#E8E4DD]/35 mb-5">
-              Certifications
-            </p>
-            <div className="grid grid-cols-2 gap-2">
-              {['API 510', 'API 570', 'API 653', 'NBIC', 'ASNT NDT', 'QA/QC'].map(cert => (
-                <div key={cert} className="border border-[#E8E4DD]/[0.08] p-2.5 text-center">
-                  <span className="font-mono text-[9px] text-[#E8E4DD]/45 tracking-wider">{cert}</span>
-                </div>
-              ))}
             </div>
           </div>
         </div>
