@@ -259,7 +259,7 @@ const TelemetryTypewriter = () => {
   const messages = [
     'Evaluating QA/QC protocols...',
     'Planning routine maintenance...',
-    'Optimizing turnaround scope...',
+    'Optimizing project scope...',
     'Drafting inspection report...',
     'Coordinating with plant manager...',
     'Verifying repair procedures...',
@@ -298,7 +298,7 @@ const TelemetryTypewriter = () => {
 
       <div>
         <h3 className="font-sans text-xl font-bold text-[#E8E4DD] mb-3 leading-tight">
-          Repair &amp;<br />Turnaround Planning
+          Repair &amp;<br />Project Planning
         </h3>
 
         {/* Terminal display */}
@@ -312,7 +312,7 @@ const TelemetryTypewriter = () => {
         </div>
 
         <p className="font-mono text-[10px] text-[#E8E4DD]/40 mt-4 leading-relaxed">
-          End-to-end management of turnaround scope from initial planning through mechanical completion and documentation sign-off.
+          End-to-end management of project scope from initial planning through mechanical completion and documentation sign-off.
         </p>
       </div>
 
@@ -457,9 +457,6 @@ const Features = () => {
               <span className="font-serif italic" style={{ color: '#E63B2E' }}>Services</span>
             </h2>
           </div>
-          <p className="font-mono text-[10px] text-[#E8E4DD]/40 max-w-xs leading-relaxed">
-            Three precision instruments covering the full spectrum of pressure equipment integrity, turnaround management, and documentation fidelity.
-          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -544,7 +541,7 @@ const GanttChart = () => {
             </h2>
           </div>
           <p className="font-mono text-[10px] text-[#E8E4DD]/40 max-w-xs leading-relaxed">
-            A live view of how II&amp;S structures a full turnaround inspection engagement — from mobilization through final sign-off.
+            A live view of how II&amp;S structures a full project and inspection engagement — from mobilization through final sign-off.
           </p>
         </div>
 
@@ -728,7 +725,7 @@ const Philosophy = () => {
               Industry Experience
             </p>
             <div className="flex flex-wrap gap-2">
-              {['Oil Refineries', 'Gulf Coast Refineries', 'Chemical Plants', 'Offshore Platforms', 'Turnarounds'].map((tag) => (
+              {['Oil Refineries', 'Gulf Coast Refineries', 'Chemical Plants', 'Offshore Platforms', 'Projects'].map((tag) => (
                 <span key={tag} className="font-mono text-[10px] text-[#E8E4DD]/50 border border-[#E8E4DD]/15 rounded px-3 py-1.5">
                   {tag}
                 </span>
@@ -909,7 +906,7 @@ const Protocol = () => {
     {
       number: '03',
       title: 'Execute',
-      subtitle: 'QA/QC and Turnaround Management',
+      subtitle: 'QA/QC and Project Management',
       description:
         'From planning to mechanical completion, we can manage the full project scope — coordinating contractors, witnessing repairs, verifying weld QA/QC, and delivering complete compliance documentation.',
       visual: <ExecuteSVG />,
